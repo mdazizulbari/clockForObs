@@ -1,0 +1,31 @@
+<!-- use width 350 and height 185 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline Clock dates</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="clock-container">
+      <div id="date"></div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+      const now = new Date();
+      // Date
+      const options = {
+        weekday: "short",
+        day: "numeric",
+        month: "numeric",
+        year: "numeric",
+      };
+      document.getElementById("date").textContent = now.toLocaleDateString(
+        "en-UK",
+        options
+      );
+    </script>
+  </body>
+</html>

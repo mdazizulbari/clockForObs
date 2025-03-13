@@ -1,0 +1,1126 @@
+<html
+  data-darkreader-mode="dynamic"
+  data-darkreader-scheme="dark"
+  data-darkreader-proxy-injected="true"
+>
+  <script
+    src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js"
+    id="eppiocemhmnlbhjplcgkofciiegomcon"
+  ></script>
+  <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script>
+  <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
+  <head>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+      }
+    </style>
+    <style class="darkreader darkreader--fallback" media="screen"></style>
+    <style class="darkreader darkreader--text" media="screen"></style>
+    <style class="darkreader darkreader--invert" media="screen">
+      .jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container
+      {
+        filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+      }
+    </style>
+    <style class="darkreader darkreader--inline" media="screen">
+      [data-darkreader-inline-bgcolor] {
+        background-color: var(--darkreader-inline-bgcolor) !important;
+      }
+      [data-darkreader-inline-bgimage] {
+        background-image: var(--darkreader-inline-bgimage) !important;
+      }
+      [data-darkreader-inline-border] {
+        border-color: var(--darkreader-inline-border) !important;
+      }
+      [data-darkreader-inline-border-bottom] {
+        border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+      }
+      [data-darkreader-inline-border-left] {
+        border-left-color: var(--darkreader-inline-border-left) !important;
+      }
+      [data-darkreader-inline-border-right] {
+        border-right-color: var(--darkreader-inline-border-right) !important;
+      }
+      [data-darkreader-inline-border-top] {
+        border-top-color: var(--darkreader-inline-border-top) !important;
+      }
+      [data-darkreader-inline-boxshadow] {
+        box-shadow: var(--darkreader-inline-boxshadow) !important;
+      }
+      [data-darkreader-inline-color] {
+        color: var(--darkreader-inline-color) !important;
+      }
+      [data-darkreader-inline-fill] {
+        fill: var(--darkreader-inline-fill) !important;
+      }
+      [data-darkreader-inline-stroke] {
+        stroke: var(--darkreader-inline-stroke) !important;
+      }
+      [data-darkreader-inline-outline] {
+        outline-color: var(--darkreader-inline-outline) !important;
+      }
+      [data-darkreader-inline-stopcolor] {
+        stop-color: var(--darkreader-inline-stopcolor) !important;
+      }
+      [data-darkreader-inline-bg] {
+        background: var(--darkreader-inline-bg) !important;
+      }
+      [data-darkreader-inline-border-short] {
+        border: var(--darkreader-inline-border-short) !important;
+      }
+      [data-darkreader-inline-border-bottom-short] {
+        border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+      }
+      [data-darkreader-inline-border-left-short] {
+        border-left: var(--darkreader-inline-border-left-short) !important;
+      }
+      [data-darkreader-inline-border-right-short] {
+        border-right: var(--darkreader-inline-border-right-short) !important;
+      }
+      [data-darkreader-inline-border-top-short] {
+        border-top: var(--darkreader-inline-border-top-short) !important;
+      }
+      [data-darkreader-inline-invert] {
+        filter: invert(100%) hue-rotate(180deg);
+      }
+    </style>
+    <style class="darkreader darkreader--variables" media="screen">
+      :root {
+        --darkreader-neutral-background: var(
+          --darkreader-background-ffffff,
+          #181a1b
+        );
+        --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+        --darkreader-selection-background: var(
+          --darkreader-background-0060d4,
+          #004daa
+        );
+        --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+      }
+    </style>
+    <style class="darkreader darkreader--root-vars" media="screen"></style>
+    <style class="darkreader darkreader--user-agent" media="screen">
+      @layer {
+        html {
+          background-color: var(
+            --darkreader-background-ffffff,
+            #181a1b
+          ) !important;
+        }
+        html {
+          color-scheme: dark !important;
+        }
+        iframe {
+          color-scheme: dark !important;
+        }
+        html,
+        body {
+          background-color: var(--darkreader-background-ffffff, #181a1b);
+        }
+        html,
+        body {
+          border-color: var(--darkreader-border-4c4c4c, #736b5e);
+          color: var(--darkreader-text-000000, #e8e6e3);
+        }
+        a {
+          color: var(--darkreader-text-0040ff, #3391ff);
+        }
+        table {
+          border-color: var(--darkreader-border-808080, #545b5e);
+        }
+        mark {
+          color: var(--darkreader-text-000000, #e8e6e3);
+        }
+        ::placeholder {
+          color: var(--darkreader-text-a9a9a9, #b2aba1);
+        }
+        input:-webkit-autofill,
+        textarea:-webkit-autofill,
+        select:-webkit-autofill {
+          background-color: var(
+            --darkreader-background-faffbd,
+            #404400
+          ) !important;
+          color: var(--darkreader-text-000000, #e8e6e3) !important;
+        }
+        * {
+          scrollbar-color: var(--darkreader-background-b0b0b0, #454a4d)
+            var(--darkreader-background-f1f1f1, #202324);
+        }
+        ::selection {
+          background-color: var(
+            --darkreader-background-0060d4,
+            #004daa
+          ) !important;
+          color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+        }
+        ::-moz-selection {
+          background-color: var(
+            --darkreader-background-0060d4,
+            #004daa
+          ) !important;
+          color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+        }
+      }
+    </style>
+    <title>Time in Chittagong</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript">
+      options = {
+        hoc: "CCCCCC",
+        hbw: 5,
+        hfc: "FFFFFF",
+        hnc: "e1ead6",
+        fin: "_sans",
+        fan: "_sans",
+        fas: 17,
+        fac: "000000",
+        fdi: 86,
+        fnu: 1,
+        mqv: 1,
+        mqc: "84a558",
+        mqs: 3,
+        mql: 3,
+        mqw: 1,
+        mqd: 96,
+        mhv: 1,
+        mhc: "84a558",
+        mhs: 3,
+        mhl: 3,
+        mhw: 1,
+        mhd: 96,
+        mmv: 1,
+        mmc: "84a558",
+        mms: 3,
+        mml: 1,
+        mmw: 0,
+        mmd: 96,
+        hhv: 1,
+        hhc: "000000",
+        hhs: 0,
+        hhl: 45,
+        hhb: 0,
+        hhw: 5,
+        hhr: 5,
+        hhm: 3,
+        hmv: 1,
+        hmc: "000000",
+        hms: 0,
+        hml: 70,
+        hmb: 0,
+        hmw: 5,
+        hmr: 5,
+        hmm: 3,
+        hsv: 1,
+        hsc: "ff0000",
+        hss: 0,
+        hsl: 75,
+        hsb: 15,
+        hsw: 1,
+        hsr: 3,
+        hsm: 3,
+        szw: 160,
+      };
+      et = 1742038802;
+      function f0(d) {
+        return (
+          ((d.getUTCHours() + 11) % 12) +
+          1 +
+          ":" +
+          p2(d.getUTCMinutes()) +
+          ":" +
+          p2(d.getUTCSeconds()) +
+          " " +
+          _ap(d)
+        );
+      }
+      cks = { t1: { t: [{ o: 21600, a: "BST" }], f: f0 } };
+      function _ap(d) {
+        var t = Math.floor(d.getTime() / 1e3 + 8640000000) % 86400;
+        if (t === 0) {
+          return "midnight";
+        }
+        if (t == 43200) {
+          return "noon";
+        }
+        if (t < 43200) {
+          return "am";
+        }
+        return "pm";
+      }
+      //Copyright timeanddate.com 2005-2015, do not use without permission
+      var ltn = 0,
+        lt0 = 0,
+        sa = 0,
+        flsh = 0;
+      Mf = Math.floor;
+      function gf(b) {
+        var d = document;
+        return d.getElementById ? d.getElementById(b) : null;
+      }
+      function ih(b, d) {
+        b && (b.innerHTML = d);
+      }
+      function rf(b, d) {
+        ih(gf("c1"), "refresh...");
+        setTimeout("location.reload()", Mf(1e3 * (b + Math.random() * d)));
+      }
+      function pf(b, d) {
+        for (; (b = "0000" + b) && b.length < d; );
+        return b.substring(b.length - d);
+      }
+      function p2(b) {
+        return 10 > b ? "0" + b : b;
+      }
+      function gtr(b, d) {
+        var h = b.t,
+          e = null,
+          l;
+        for (l = 0; l < h.length; l++) {
+          var a = h[l];
+          if (a.t > d) break;
+          e = a;
+          l && (e.C = l);
+        }
+        return e ? e : {};
+      }
+      function dt() {
+        return +new Date();
+      }
+      function locDate() {
+        var b = (dt() + sa) / 1e3,
+          d = gtr(cks.t1, b).o;
+        return void 0 !== d ? 1e3 * (b + d) : 1e3 * b;
+      }
+      function upd() {
+        var b = dt() + sa;
+        if (ltn > b) rf(7, 0);
+        else {
+          ltn = b;
+          var d = Mf(b / 1e3);
+          if (d > et) rf(10, 0);
+          else {
+            if (d != lt0) {
+              lt0 = d;
+              var b = cks.t1,
+                h = gtr(b, d),
+                e = h.o,
+                h = h.a;
+              void 0 !== e &&
+                b.d1 &&
+                (ih(b.d1, b.f(new Date(1e3 * (d + e)))),
+                b.pa != h && b.d2 && ((b.pa = h), ih(b.d2, h)));
+              b = dt() + sa;
+            }
+            setTimeout(upd, 1e3 - (b % 1e3));
+          }
+        }
+      }
+      function sync(b) {
+        function d(a, k, b) {
+          sa = a;
+          sae = k;
+          if (flsh) {
+            if ((flO = gf("count")))
+              try {
+                flO.setSync(a);
+                return;
+              } catch (c) {}
+            2e3 > b &&
+              ((b += 100),
+              setTimeout(function () {
+                d(sa, sae, b);
+              }, b));
+          }
+        }
+        var h = document.cookie;
+        if (h) {
+          var e = h.match(/tads\=(\d+)_(\d+)/);
+          if (e) {
+            var l = dt();
+            if (-1e4 < e[1] - l) {
+              d(e[2] - 0, e[3] - 0, 0);
+              upd();
+              return;
+            }
+          }
+          if (1e3 > b && 0 <= h.indexOf("tads=c")) {
+            b = 2 * b + 10;
+            setTimeout("sync(" + b + ")", b);
+            return;
+          }
+        }
+        document.cookie = "tads=c; path=/";
+        var a = null;
+        b = window;
+        try {
+          b.XMLHttpRequest && (a = new XMLHttpRequest());
+        } catch (k) {}
+        if (!a && b.ActiveXObject) {
+          try {
+            a = new ActiveXObject("Msxml2.XMLHTTP");
+          } catch (r) {}
+          if (!a)
+            try {
+              a = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (g) {}
+        }
+        if (a)
+          try {
+            var n = dt(),
+              q = document.URL.replace(/clock.*/, "ts.php?t=" + n);
+            a.open("GET", q, !0);
+            a.onreadystatechange = function () {
+              var k = dt();
+              if (a && 4 == a.readyState && 200 == a.status) {
+                var b = (n + k) / 2,
+                  c = 1e3 * parseFloat(a.responseText);
+                0 < c &&
+                  ((c = Mf(c - b)),
+                  d(c, k - b, 0),
+                  (document.cookie = "tads=" + (k + "_" + c) + "; path=/"),
+                  (a = null),
+                  upd());
+              }
+            };
+            n = dt();
+            a.send("");
+          } catch (c) {}
+      }
+      (function () {
+        function b(a, k) {
+          for (var b in k)
+            try {
+              a[b] = k[b];
+            } catch (g) {}
+          return a;
+        }
+        var d = [
+            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "I II III IV V VI VII VIII IX X XI XII".split(" "),
+            "\u4e00 \u4e8c \u4e09 \u56db \u4e94 \u516d \u4e03 \u516b \u4e5d \u5341 \u5341\u4e00 \u5341\u4e8c".split(
+              " "
+            ),
+          ],
+          h = {
+            hoc: "CCCCCC",
+            hbw: 5,
+            hfc: "FFFFFF",
+            hnc: -1,
+            fiv: 1,
+            fin: "_sans",
+            fav: 1,
+            fan: "_sans",
+            fas: 16,
+            fac: "000000",
+            fdi: 86,
+            fnu: 1,
+            mqv: 1,
+            mqs: 0,
+            mqd: 96,
+            mql: 10,
+            mqw: 1,
+            mqc: "000",
+            mhv: 1,
+            mhs: 0,
+            mhd: 96,
+            mhl: 7,
+            mhw: 1,
+            mhc: "000",
+            mmv: 1,
+            mms: 0,
+            mmd: 96,
+            mml: 2,
+            mmw: 1,
+            mmc: "000",
+            hhv: 1,
+            hhs: 0,
+            hhm: 0,
+            hhl: 45,
+            hhb: 4,
+            hhw: 5,
+            hhr: 5,
+            hhc: "000000",
+            hmv: 1,
+            hms: 0,
+            hmm: 0,
+            hml: 70,
+            hmb: 4,
+            hmw: 5,
+            hmr: 5,
+            hmc: "000000",
+            hsv: 1,
+            hss: 0,
+            hsm: 0,
+            hsl: 75,
+            hsb: 14,
+            hsw: 1,
+            hsr: 3,
+            hsc: "FF0000",
+            hcw: 0,
+            hcd: 70,
+            hcc: "000000",
+            szw: 500,
+          },
+          e = (function () {
+            return (
+              window.requestAnimationFrame ||
+              window.webkitRequestAnimationFrame ||
+              window.mozRequestAnimationFrame ||
+              window.oRequestAnimationFrame ||
+              window.msRequestAnimationFrame ||
+              function (a) {
+                window.setTimeout(function () {
+                  a(locDate());
+                }, 20);
+              }
+            );
+          })(),
+          l = function (a, k, d, g) {
+            this.b = a;
+            this.F = k;
+            this.h = d;
+            void 0 !== this.b.getContext &&
+              ((this.o = b(h, g)),
+              (this.s = this.o.szw),
+              (this.c = this.s / 2),
+              (this.r = this.s / 2),
+              (this.S = 200 / this.s),
+              (this.t = locDate()),
+              this.setup());
+          };
+        l.prototype = {
+          setup: function () {
+            this.b.width =
+              this.b.height =
+              this.F.width =
+              this.F.height =
+                2 * this.s;
+            this.b.style.width =
+              this.b.style.height =
+              this.F.style.width =
+              this.F.style.height =
+                this.s + "px";
+            this.h.style.width = this.h.style.height = this.s + "px";
+            this.B = this.b.getContext("2d");
+            this.frontCtx = this.F.getContext("2d");
+            this.B.setTransform(2, 0, 0, 2, 0, 0);
+            this.frontCtx.setTransform(2, 0, 0, 2, 0, 0);
+            this.B.clearRect(0, 0, this.s, this.s);
+            this.G();
+            this.update();
+          },
+          setOptions: function (a) {
+            b(options, a);
+            this.setup();
+          },
+          G: function () {
+            this.B.clearRect(0, 0, this.s, this.s);
+            this.A();
+            this.E();
+            this.T();
+            this.C();
+          },
+          A: function () {
+            var a = this.o,
+              k = this.B;
+            if (-1 !== a.hnc) {
+              var b = k.createRadialGradient(
+                this.c,
+                this.c,
+                0,
+                this.c,
+                this.c,
+                this.r
+              );
+              b.addColorStop(0, "#" + a.hfc);
+              b.addColorStop(1, "#" + a.hnc);
+            } else b = "#" + a.hfc;
+            k.save();
+            k.fillStyle = b;
+            k.strokeStyle = "#" + a.hoc;
+            k.lineWidth = (a.hbw / 100) * this.r * 2;
+            k.arc(
+              this.c,
+              this.c,
+              a.hwc ? 0.9 * this.r : this.r,
+              0,
+              2 * Math.PI,
+              !1
+            );
+            a.hwc &&
+              ((k.shadowBlur = 20 / this.S), (k.shadowColor = "#" + a.hwc));
+            k.fill();
+            k.clip();
+            k.shadowColor = "transparent black";
+            k.shadowBlur = 0;
+            0 < a.hbw && k.stroke();
+            k.restore();
+          },
+          E: function () {
+            var a = this.B,
+              b = this.o;
+            1 <= b.hcw &&
+              (a.save(),
+              a.beginPath(),
+              (a.strokeStyle = "#" + b.hcc),
+              (a.lineWidth = ((b.hcw / 100) * this.r) / 2),
+              a.arc(this.c, this.c, b.hcd / this.S, 0, 2 * Math.PI, !1),
+              a.closePath(),
+              a.stroke(),
+              a.restore());
+          },
+          I: function (a, b, d, g, n, h) {
+            var c = this.B,
+              e = this.r / 100;
+            c.save();
+            c.translate(this.c, this.c);
+            c.rotate(b);
+            c.translate(d * e, 0);
+            c.strokeStyle = "#" + h;
+            c.fillStyle = "#" + h;
+            switch (a) {
+              case 1:
+                c.beginPath();
+                c.arc(0, 0, g * e, 0, 2 * Math.PI);
+                c.stroke();
+                break;
+              case 2:
+                c.beginPath();
+                c.arc(0, 0, g * e, 0, 2 * Math.PI);
+                c.fill();
+                break;
+              case 4:
+                c.beginPath();
+                c.arc(0, 0, (n * e) / 2, 0, 2 * Math.PI);
+                c.moveTo(0, (n * e) / 2);
+                c.lineTo(-(g * e), 0);
+                c.lineTo(0, -((n * e) / 2));
+                c.fill();
+                break;
+              default:
+                c.beginPath(),
+                  c.moveTo(0, 0),
+                  (c.lineWidth = n / this.S),
+                  c.lineTo(-g * e, 0),
+                  c.stroke();
+            }
+            this.B.restore();
+          },
+          T: function () {
+            for (var a = this.o, b = 0; 360 >= b; b += 6)
+              0 != b % 90 || (1 !== a.mqv && void 0 !== a.mqv)
+                ? 0 != b % 30 ||
+                  0 === b % 90 ||
+                  (1 !== a.mhv && void 0 !== a.mhv)
+                  ? (1 !== a.mmv && void 0 !== a.mmv) ||
+                    this.I(
+                      a.mms,
+                      (b * Math.PI) / 180,
+                      a.mmd,
+                      a.mml,
+                      a.mmw,
+                      a.mmc
+                    )
+                  : this.I(
+                      a.mhs,
+                      (b * Math.PI) / 180,
+                      a.mhd,
+                      a.mhl,
+                      a.mhw,
+                      a.mhc
+                    )
+                : this.I(
+                    a.mqs,
+                    (b * Math.PI) / 180,
+                    a.mqd,
+                    a.mql,
+                    a.mqw,
+                    a.mqc
+                  );
+          },
+          C: function () {
+            var a = [],
+              b = this,
+              e = b.B,
+              g = b.o;
+            if (void 0 === g.fiv || 1 === g.fiv)
+              a = a.concat([1, 2, 4, 5, 7, 8, 10, 11]);
+            if (void 0 === g.fav || 1 === g.fav) a = a.concat([3, 6, 9, 12]);
+            a.sort();
+            e.save();
+            e.textAlign = "center";
+            e.textBaseline = "middle";
+            a.forEach(function (a) {
+              if (0 == a % 3)
+                var h = g.fas / b.S,
+                  c =
+                    "_sans" === g.fan
+                      ? "sans-serif"
+                      : "_serif" === g.fan
+                      ? "serif"
+                      : "_typewriter" === g.fan
+                      ? "monospace"
+                      : "",
+                  l = g.fac;
+              else
+                (h = g.fas / b.S),
+                  (c =
+                    "_sans" === g.fin
+                      ? "sans-serif"
+                      : "_serif" === g.fan
+                      ? "serif"
+                      : "_typewriter" === g.fan
+                      ? "monospace"
+                      : ""),
+                  (l = g.fac);
+              e.fillStyle = "#" + l;
+              e.font = h + "px " + c;
+              c = ((2 * Math.PI) / 12) * -a;
+              h = Math.sin(c + Math.PI) * (g.fdi / 100) * b.r + b.c;
+              c = Math.cos(c + Math.PI) * (g.fdi / 100) * b.r + b.c;
+              e.fillText(d[g.fnu - 1][a - 1], h, c);
+            }, b);
+            e.restore();
+          },
+          drawHand: function (a, b, e, g, d, h, c, l, p) {
+            var m = 0,
+              f = this.frontCtx,
+              m = (this.t / a) % b;
+            b = 360 / b;
+            switch (g) {
+              case 1:
+                m = Mf(m) * b;
+                break;
+              case 2:
+                g = Mf(m) * b;
+                m =
+                  0 < this.t % a && 250 > this.t % a
+                    ? g +
+                      (0.55 * b * Math.sin((this.t % a) / 25)) /
+                        Math.exp((this.t % a) / 100)
+                    : g;
+                break;
+              default:
+                m *= b;
+            }
+            f.save();
+            f.strokeStyle = "#" + p;
+            f.fillStyle = "#" + p;
+            f.shadowBlur = 2 / this.S;
+            f.shadowColor = "rgba(0,0,0,0.6)";
+            f.translate(this.c, this.c);
+            f.rotate((m * Math.PI) / 180);
+            a = this.r / 100;
+            switch (e) {
+              case 1:
+                f.beginPath();
+                f.lineWidth = ((c * a) / 2) * 2;
+                f.moveTo(0, h * a);
+                f.lineTo(0, (-d * a) / 3);
+                f.stroke();
+                f.lineWidth = (c * a) / 2;
+                f.lineTo(0, -d * a);
+                f.stroke();
+                break;
+              case 2:
+                f.beginPath();
+                f.moveTo((c * a) / 2, 0);
+                f.lineTo(0, -d * a);
+                f.lineTo((-c * a) / 2, 0);
+                f.lineTo(0, h * a);
+                f.lineTo((c * a) / 2, 0);
+                f.fill();
+                break;
+              default:
+                f.beginPath(),
+                  f.moveTo(0, h * a),
+                  (f.lineWidth = Math.max(c / this.S / 2, 0.5)),
+                  f.lineTo(0, -d * a),
+                  f.stroke();
+            }
+            f.shadowBlur = 0;
+            f.beginPath();
+            f.arc(0, 0, l * a, 0, 2 * Math.PI);
+            f.fill();
+            f.restore();
+          },
+          drawHands: function () {
+            var a = this.o;
+            this.frontCtx.clearRect(0, 0, this.s, this.s);
+            1 === a.hhv &&
+              this.drawHand(
+                36e5,
+                12,
+                a.hhs,
+                a.hhm,
+                a.hhl,
+                a.hhb,
+                a.hhw,
+                a.hhr,
+                a.hhc
+              );
+            1 === a.hmv &&
+              this.drawHand(
+                6e4,
+                60,
+                a.hms,
+                a.hmm,
+                a.hml,
+                a.hmb,
+                a.hmw,
+                a.hmr,
+                a.hmc
+              );
+            1 === a.hsv &&
+              this.drawHand(
+                1e3,
+                60,
+                a.hss,
+                a.hsm,
+                a.hsl,
+                a.hsb,
+                a.hsw,
+                a.hsr,
+                a.hsc
+              );
+          },
+          update: function () {
+            this.t = locDate();
+            this.drawHands();
+            e(this.update.bind(this));
+          },
+        };
+        window.onload = function () {
+          if (void 0 !== document.createElement("canvas").getContext)
+            window.clock = new l(gf("back"), gf("front"), gf("hov"), options);
+          else {
+            var a = gf("fc");
+            a.className += " no";
+            ih(a, flash_html + a.innerHTML + "</object>");
+            flsh = 1;
+          }
+          var b;
+          if ("undefined" !== typeof cks) {
+            for (b in cks)
+              (a = cks[b]), (a.d1 = gf(b)), (a.d2 = gf(b + "a")), (a.pa = "");
+            sync(0);
+          }
+        };
+      })();
+    </script>
+    <style>
+      #fc canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #fc #back {
+        position: relative;
+      }
+      #fc {
+        display: inline-block;
+        position: relative;
+      }
+      #t1c {
+        display: block;
+        text-align: center;
+      }
+      #hov {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("//c.tadst.com/gfx/n/logo/logo-2021--vertical-color-whitebg.svg")
+          rgba(255, 255, 255, 0.8);
+        background: url("//c.tadst.com/gfx/n/logo/logo-2021--vertical-color-whitebg.svg"),
+          linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: none;
+      }
+      #fc:hover #hov {
+        display: block;
+      }
+      .no #hov {
+        display: none;
+      }
+      body {
+        border: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+      }
+    </style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <meta name="darkreader" content="2326fcd7bc7c47db992e55891f44e4b1" />
+    <style class="darkreader darkreader--override" media="screen">
+      .vimvixen-hint {
+        background-color: var(
+          --darkreader-background-ffd76e,
+          #684b00
+        ) !important;
+        border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+        color: var(--darkreader-text-302505, #d7d4cf) !important;
+      }
+      #vimvixen-console-frame {
+        color-scheme: light !important;
+      }
+      ::placeholder {
+        opacity: 0.5 !important;
+      }
+      #edge-translate-panel-body,
+      .MuiTypography-body1,
+      .nfe-quote-text {
+        color: var(--darkreader-neutral-text) !important;
+      }
+      gr-main-header {
+        background-color: var(
+          --darkreader-background-add8e6,
+          #1b4958
+        ) !important;
+      }
+      .tou-z65h9k,
+      .tou-mignzq,
+      .tou-1b6i2ox,
+      .tou-lnqlqk {
+        background-color: var(--darkreader-neutral-background) !important;
+      }
+      .tou-75mvi {
+        background-color: var(
+          --darkreader-background-cfecf5,
+          #0f3a47
+        ) !important;
+      }
+      .tou-ta9e87,
+      .tou-1w3fhi0,
+      .tou-1b8t2us,
+      .tou-py7lfi,
+      .tou-1lpmd9d,
+      .tou-1frrtv8,
+      .tou-17ezmgn {
+        background-color: var(
+          --darkreader-background-f5f5f5,
+          #1e2021
+        ) !important;
+      }
+      .tou-uknfeu {
+        background-color: var(
+          --darkreader-background-faedda,
+          #432c09
+        ) !important;
+      }
+      .tou-6i3zyv {
+        background-color: var(
+          --darkreader-background-85c3d8,
+          #245d70
+        ) !important;
+      }
+      div.mermaid-viewer-control-panel .btn {
+        background-color: var(--darkreader-neutral-background);
+        fill: var(--darkreader-neutral-text);
+      }
+      svg g rect.er {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g rect.er.entityBox {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g rect.er.attributeBoxOdd {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g rect.er.attributeBoxEven {
+        fill: var(--darkreader-selection-background);
+        fill-opacity: 0.8 !important;
+      }
+      svg rect.er.relationshipLabelBox {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g g.nodes rect,
+      svg g g.nodes polygon {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      svg g rect.task {
+        fill: var(--darkreader-selection-background) !important;
+      }
+      svg line.messageLine0,
+      svg line.messageLine1 {
+        stroke: var(--darkreader-neutral-text) !important;
+      }
+      div.mermaid .actor {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      mitid-authenticators-code-app > .code-app-container {
+        background-color: white !important;
+        padding-top: 1rem;
+      }
+      iframe#unpaywall[src$="unpaywall.html"] {
+        color-scheme: light !important;
+      }
+      select option {
+        background-color: var(--darkreader-neutral-background) !important;
+      }
+      body#tumblr {
+        --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+        --darkreader-bg--white: 23, 23, 23 !important;
+        --darkreader-text--black: 228, 224, 218 !important;
+      }
+      :host {
+        --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+        --d2l-button-icon-background-color-hover: var(
+          --darkreader-bg--d2l-color-gypsum
+        ) !important;
+        --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+        --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+        --d2l-dropdown-background-color: var(
+          --darkreader-neutral-background
+        ) !important;
+        --d2l-dropdown-border-color: var(
+          --darkreader-border--d2l-color-mica
+        ) !important;
+        --d2l-input-backgroud-color: var(
+          --darkreader-neutral-background
+        ) !important;
+        --d2l-menu-border-color: var(
+          --darkreader-bg--d2l-color-gypsum
+        ) !important;
+        --d2l-tooltip-background-color: var(
+          --darkreader-neutral-background
+        ) !important;
+        --d2l-tooltip-border-color: var(
+          --darkreader-bg--d2l-color-gypsum
+        ) !important;
+      }
+      :host([_floating]) .d2l-floating-buttons-container {
+        background-color: var(--darkreader-neutral-background) !important;
+        border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+        opacity: 0.88 !important;
+      }
+      d2l-card {
+        background: var(--darkreader-neutral-background) !important;
+        border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+      }
+      d2l-dropdown-content > div,
+      d2l-menu-item {
+        background-color: var(--darkreader-neutral-background) !important;
+        border-radius: 10px !important;
+      }
+      d2l-empty-state-simple {
+        border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+      }
+      .d2l-button-filter > ul > li > a.vui-button {
+        border-color: var(--darkreader-border--d2l-color-mica) !important;
+      }
+      .d2l-label-text:has(.d2l-button-subtle-content):hover,
+      .d2l-label-text:has(.d2l-button-subtle-content):focus,
+      .d2l-label-text:has(.d2l-button-subtle-content):active {
+        background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+      }
+      .d2l-navigation-centerer {
+        color: inherit !important;
+      }
+      .d2l-tabs-layout {
+        border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+      }
+      .d2l-input,
+      .d2l-calendar-date,
+      .d2l-htmleditor-container {
+        background-color: var(--darkreader-neutral-background) !important;
+      }
+      .d2l-collapsible-panel {
+        border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+        border-radius: 0.4rem !important;
+      }
+      .d2l-collapsible-panel-divider {
+        border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+      }
+      .d2l-w2d-flex {
+        border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+      }
+      .d2l-collapsible-panel scrolled,
+      .d2l-collapsible-panel-header,
+      .d2l-w2d-collection-fixed {
+        background-color: var(--darkreader-neutral-background) !important;
+      }
+      .d2l-loading-spinner-bg {
+        fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+      }
+      .d2l-loading-spinner-bg-stroke {
+        stroke: var(--darkreader-border--d2l-color-mica) !important;
+      }
+      .d2l-loading-spinner-wrapper svg path,
+      .d2l-loading-spinner-wrapper svg circle {
+        fill: var(--darkreader-neutral-background) !important;
+      }
+      embed[type="application/pdf"][src="about:blank"] {
+        filter: invert(100%) contrast(90%);
+      }
+    </style>
+    <script
+      bis_use="true"
+      type="text/javascript"
+      charset="utf-8"
+      data-bis-config='["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com","audio.xpleer.com","keepa.com","static.xx.fbcdn.net","sas.selleramp.com","1plus1.video","console.googletagservices.com","//lnkd.demdex.net/","//radar.cedexis.com/","//li.protechts.net/","challenges.cloudflare.com/","ogs.google.com"]'
+      src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"
+    ></script>
+  </head>
+  <body
+    allowtransparency="true"
+    style="
+      background: transparent;
+      width: 160px;
+      --darkreader-inline-bgimage: initial;
+      --darkreader-inline-bgcolor: transparent;
+    "
+    data-darkreader-inline-bgimage=""
+    data-darkreader-inline-bgcolor=""
+    __processed_6389f65e-eb1d-4d33-9255-898b63ad4926__="true"
+    bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4yMCIsInNjb3JlIjoyMDAyMH1d"
+    class="vsc-initialized"
+    data-new-gr-c-s-check-loaded="14.1226.0"
+    data-gr-ext-installed=""
+  >
+    <script type="text/javascript">
+      flash_html =
+        '<object width="160" height="160" id=count data="\/fl\/fc_c_v3.swf" type="application\/x-shockwave-flash"><param name=movie value="\/fl\/fc_c_v3.swf"><param name=quality value=high><param name=flashvars value="hoc=CCCCCC&amp;hbw=20&amp;hfc=FFFFFF&amp;hnc=e1ead6&amp;fdi=172&amp;fan=_sans&amp;fin=_sans&amp;fas=35&amp;fis=35&amp;fac=000000&amp;fic=000000&amp;mqc=84a558&amp;mhc=84a558&amp;mmc=84a558&amp;hhc=000000&amp;hmc=000000&amp;hsc=ff0000&amp;n=469&amp;dst=21600"><param name=swliveconnect value=true><param name=wmode value=transparent><param name=allowFullScreen value=true><param name=allowScriptAccess value=sameDomain>';
+    </script>
+    <a
+      href="https://www.timeanddate.com/worldclock/bangladesh/chittagong"
+      id="t1c"
+      title="clock provided by timeanddate.com"
+      target="_blank"
+      ><div id="fc" style="width: 160px; height: 160px" bis_skin_checked="1">
+        <canvas class="no"><span id="t1">5:59:00 pm</span></canvas
+        ><canvas
+          id="back"
+          height="320"
+          width="320"
+          style="height: 160px; width: 160px"
+        ></canvas
+        ><canvas
+          id="front"
+          height="320"
+          width="320"
+          style="height: 160px; width: 160px"
+        ></canvas>
+        <div
+          id="hov"
+          style="height: 160px; width: 160px"
+          bis_skin_checked="1"
+        ></div></div
+    ></a>
+    <div
+      id="qh-extension-is-installed"
+      style="display: none"
+      bis_skin_checked="1"
+    ></div>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
