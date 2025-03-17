@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline AM/PM Time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="clock-container">
+      <div id="time"></div>
+    </div>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        let hours = now.getHours();
+        const ampm = hours >= 12 ? "PM" : "AM";
+
+        hours = hours % 12 || 12; // Convert 24-hour format to 12-hour format
+        document.getElementById(
+          "time"
+        ).textContent = `${ampm}`;
+      }
+
+      setInterval(updateClock, 10000);
+      updateClock();
+    </script>
+  </body>
+</html>
