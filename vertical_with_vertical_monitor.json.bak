@@ -103,7 +103,8 @@
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
-        "type2": 3
+        "type2": 2,
+        "source": "Video Capture Device"
     },
     "modules": {
         "scripts-tool": [],
@@ -131,6 +132,10 @@
             "lang_id": 2057,
             "provider": "mssapi"
         }
+    },
+    "resolution": {
+        "x": 1080,
+        "y": 1920
     },
     "sources": [
         {
@@ -211,9 +216,9 @@
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
-                "text": "Day21",
+                "text": "day15",
                 "font": {
-                    "face": "Space Mono",
+                    "face": "Cascadia Mono",
                     "style": "Bold",
                     "size": 256,
                     "flags": 1
@@ -245,7 +250,7 @@
             "id": "monitor_capture",
             "versioned_id": "monitor_capture",
             "settings": {
-                "monitor_id": "\\\\?\\DISPLAY#HIK0021#5&4c0409e&0&UID260#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
+                "monitor_id": "\\\\?\\DISPLAY#HIK0021#5&4c0409e&0&UID261#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
             },
             "mixers": 0,
             "sync": 0,
@@ -271,7 +276,7 @@
             "id": "monitor_capture",
             "versioned_id": "monitor_capture",
             "settings": {
-                "monitor_id": "\\\\?\\DISPLAY#HIK0021#5&4c0409e&0&UID261#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
+                "monitor_id": "\\\\?\\DISPLAY#HIK0021#5&4c0409e&0&UID260#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
             },
             "mixers": 0,
             "sync": 0,
@@ -297,18 +302,18 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v2",
             "settings": {
-                "outline": false,
+                "outline": true,
                 "undo_uuid": "4a5359cf-2c20-4ffc-8204-1d49b381778c",
-                "text": "Coding till I \nbecome WEB DEV",
                 "font": {
-                    "face": "Share Tech Mono",
-                    "style": "Regular",
+                    "face": "Cascadia Mono",
+                    "style": "Bold",
                     "size": 72,
-                    "flags": 0
+                    "flags": 1
                 },
                 "align": "center",
                 "outline_size": 10,
-                "outline_color": 4278190080
+                "outline_color": 4278190080,
+                "text": "Coding till I \nbecome WEB DEV"
             },
             "mixers": 0,
             "sync": 0,
@@ -336,16 +341,16 @@
             "settings": {
                 "outline": true,
                 "undo_uuid": "1eba7313-32f8-44b6-8eeb-2a2653bc7d87",
-                "text": "Results displayed \nat the last 5s",
                 "font": {
-                    "face": "Space Mono",
-                    "style": "Bold",
+                    "face": "Ubuntu Sans Mono",
+                    "style": "Bold Italic",
                     "size": 85,
-                    "flags": 1
+                    "flags": 3
                 },
-                "align": "center",
                 "outline_size": 20,
-                "outline_color": 4278190080
+                "outline_color": 4278190080,
+                "text": "Results displayed \nat the last 5s",
+                "align": "center"
             },
             "mixers": 0,
             "sync": 0,
@@ -372,7 +377,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 11,
                 "items": [
                     {
                         "name": "Display Capture",
@@ -459,12 +464,12 @@
                         "locked": false,
                         "rot": 0.0,
                         "pos": {
-                            "x": 739.0,
+                            "x": 536.0,
                             "y": 0.0
                         },
                         "scale": {
-                            "x": 0.53281247615814209,
-                            "y": 0.53333336114883423
+                            "x": 0.85000002384185791,
+                            "y": 0.85000002384185791
                         },
                         "align": 5,
                         "bounds_type": 0,
@@ -498,8 +503,8 @@
                         "locked": false,
                         "rot": 0.0,
                         "pos": {
-                            "x": 752.915283203125,
-                            "y": 1152.515625
+                            "x": 742.0,
+                            "y": 1165.0
                         },
                         "scale": {
                             "x": 0.57288134098052979,
@@ -537,8 +542,8 @@
                         "locked": false,
                         "rot": 0.0,
                         "pos": {
-                            "x": 864.0,
-                            "y": 371.29730224609375
+                            "x": 960.0,
+                            "y": 113.0
                         },
                         "scale": {
                             "x": 0.3880000114440918,
@@ -615,7 +620,7 @@
                         "locked": false,
                         "rot": 90.0,
                         "pos": {
-                            "x": 1070.0,
+                            "x": 1080.0,
                             "y": 448.0
                         },
                         "scale": {
@@ -693,12 +698,12 @@
                         "locked": false,
                         "rot": 0.0,
                         "pos": {
-                            "x": 89.0,
-                            "y": 925.0
+                            "x": 98.0,
+                            "y": 1014.14892578125
                         },
                         "scale": {
-                            "x": 0.90432101488113403,
-                            "y": 0.90425533056259155
+                            "x": 0.79032260179519653,
+                            "y": 0.78723406791687012
                         },
                         "align": 5,
                         "bounds_type": 0,
@@ -713,45 +718,6 @@
                         "crop_right": 0,
                         "crop_bottom": 0,
                         "id": 11,
-                        "group_item_backup": false,
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "Time",
-                        "source_uuid": "9264c59e-f62e-41e6-a5f3-2c6107ed1852",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "pos": {
-                            "x": 739.0,
-                            "y": 256.0
-                        },
-                        "scale": {
-                            "x": 0.85250002145767212,
-                            "y": 0.8540540337562561
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 12,
                         "group_item_backup": false,
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -796,9 +762,7 @@
                 "libobs.show_scene_item.10": [],
                 "libobs.hide_scene_item.10": [],
                 "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": [],
-                "libobs.show_scene_item.12": [],
-                "libobs.hide_scene_item.12": []
+                "libobs.hide_scene_item.11": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -836,41 +800,6 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 503382016,
-            "name": "Time",
-            "uuid": "9264c59e-f62e-41e6-a5f3-2c6107ed1852",
-            "id": "browser_source",
-            "versioned_id": "browser_source",
-            "settings": {
-                "is_local_file": true,
-                "local_file": "C:/Users/SMA Bari/Documents/sma-codes/clockForObs/time.html",
-                "width": 400,
-                "height": 135
-            },
-            "mixers": 255,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "ObsBrowser.Refresh": []
-            },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
