@@ -2,7 +2,7 @@
     "DesktopAudioDevice1": {
         "prev_ver": 520093699,
         "name": "Desktop Audio",
-        "uuid": "84590a05-368d-446a-8851-113af899e9fc",
+        "uuid": "05cf1581-be4b-4d43-a7a4-57dbe2f7543a",
         "id": "wasapi_output_capture",
         "versioned_id": "wasapi_output_capture",
         "settings": {
@@ -33,7 +33,7 @@
     "AuxAudioDevice1": {
         "prev_ver": 520093699,
         "name": "Mic/Aux",
-        "uuid": "ab180ba0-1f27-4697-81ec-3ed5326b69c0",
+        "uuid": "3ec46f4f-02c8-4b6a-aee4-bf4a280bbedb",
         "id": "wasapi_input_capture",
         "versioned_id": "wasapi_input_capture",
         "settings": {
@@ -68,7 +68,7 @@
             "name": "Scene"
         }
     ],
-    "name": "Vertical",
+    "name": "3 monitors",
     "groups": [],
     "quick_transitions": [
         {
@@ -145,7 +145,7 @@
         {
             "prev_ver": 520093699,
             "name": "AmPm",
-            "uuid": "ac20bab3-85cd-4bd2-a6fe-2ff87ea0c935",
+            "uuid": "d97b7e8b-432e-40b8-af78-687438dcb41d",
             "id": "browser_source",
             "versioned_id": "browser_source",
             "settings": {
@@ -179,43 +179,8 @@
         },
         {
             "prev_ver": 520093699,
-            "name": "Browser",
-            "uuid": "44b1526f-c747-4d6b-a92c-2abb33677565",
-            "id": "browser_source",
-            "versioned_id": "browser_source",
-            "settings": {
-                "is_local_file": true,
-                "local_file": "C:/Users/smabari/Documents/smacodes/clockForObs/time.html",
-                "width": 400,
-                "height": 135
-            },
-            "mixers": 255,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "ObsBrowser.Refresh": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093699,
             "name": "Date",
-            "uuid": "ae6e2dc8-acaa-465b-8396-e964f06b98e0",
+            "uuid": "8e7d18d7-61eb-477f-85b4-5da942182968",
             "id": "browser_source",
             "versioned_id": "browser_source",
             "settings": {
@@ -250,17 +215,17 @@
         {
             "prev_ver": 520093699,
             "name": "Day Count",
-            "uuid": "c471abf6-0711-439c-849d-4fe28ad556e8",
+            "uuid": "3ad6ce08-ff42-4619-9701-a9d1a1d745a8",
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
-                "text": "Day30",
+                "text": "Day31",
                 "font": {
                     "face": "Space Mono",
-                    "style": "Bold",
+                    "flags": 1,
                     "size": 256,
-                    "flags": 1
+                    "style": "Bold"
                 },
                 "outline_size": 20,
                 "outline_color": 4278190080
@@ -285,11 +250,11 @@
         {
             "prev_ver": 520093699,
             "name": "Display Capture",
-            "uuid": "58a6f91d-1aea-475d-bfc4-44014dc63bb4",
+            "uuid": "260a742c-7906-496b-80de-3d10f622deec",
             "id": "monitor_capture",
             "versioned_id": "monitor_capture",
             "settings": {
-                "monitor_id": "\\\\?\\DISPLAY#HIK0021#5&4c0409e&0&UID517#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
+                "monitor_id": "\\\\?\\DISPLAY#HIK0021#5&4c0409e&0&UID0#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
             },
             "mixers": 0,
             "sync": 0,
@@ -311,11 +276,37 @@
         {
             "prev_ver": 520093699,
             "name": "Display Capture 2",
-            "uuid": "bd3f43d6-d3d9-4ea2-88ac-61615ea0f46a",
+            "uuid": "c208d082-998b-4124-96f9-59b8d03e5d04",
             "id": "monitor_capture",
             "versioned_id": "monitor_capture",
             "settings": {
-                "monitor_id": "\\\\?\\DISPLAY#HIK0021#5&4c0409e&0&UID516#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
+                "monitor_id": "\\\\?\\DISPLAY#HIK0021#5&9d880e6&0&UID257#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520093699,
+            "name": "Display Capture 3",
+            "uuid": "dde6e3e0-0529-43b3-b106-4b4457a40f76",
+            "id": "monitor_capture",
+            "versioned_id": "monitor_capture",
+            "settings": {
+                "monitor_id": "\\\\?\\DISPLAY#DELF06C#5&9d880e6&0&UID256#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}"
             },
             "mixers": 0,
             "sync": 0,
@@ -337,20 +328,22 @@
         {
             "prev_ver": 520093699,
             "name": "Mission",
-            "uuid": "4a5359cf-2c20-4ffc-8204-1d49b381778c",
+            "uuid": "824cb96d-cbd4-4f8c-9d6a-4a57a56720a0",
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": false,
+                "text": "Coding till I\nMASTER WEB DEV",
                 "undo_uuid": "4a5359cf-2c20-4ffc-8204-1d49b381778c",
-                "text": "Coding\ntill I\nMASTER\nWEB DEV",
                 "font": {
                     "face": "Share Tech Mono",
-                    "style": "Regular",
-                    "size": 256,
-                    "flags": 0
+                    "flags": 0,
+                    "size": 72,
+                    "style": "Regular"
                 },
-                "align": "center"
+                "align": "center",
+                "outline_size": 10,
+                "outline_color": 4278190080
             },
             "mixers": 0,
             "sync": 0,
@@ -372,19 +365,20 @@
         {
             "prev_ver": 520093699,
             "name": "Results",
-            "uuid": "1eba7313-32f8-44b6-8eeb-2a2653bc7d87",
+            "uuid": "294420d1-dd4a-4989-89bd-ef1f612b36fc",
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
-                "text": "Results displayed at the last 5s",
+                "text": "Results displayed \nat the last 5s",
                 "undo_uuid": "1eba7313-32f8-44b6-8eeb-2a2653bc7d87",
                 "font": {
-                    "face": "Share Tech Mono",
-                    "style": "Regular",
+                    "face": "Space Mono",
+                    "flags": 1,
                     "size": 85,
-                    "flags": 0
+                    "style": "Bold"
                 },
+                "align": "center",
                 "outline_size": 20,
                 "outline_color": 4278190080
             },
@@ -408,16 +402,16 @@
         {
             "prev_ver": 520093699,
             "name": "Scene",
-            "uuid": "4c97b0b7-a850-4059-b4cb-92aa0ce74df1",
+            "uuid": "a3b25cbe-97cf-416e-996e-720128b4869b",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 14,
                 "items": [
                     {
                         "name": "Display Capture",
-                        "source_uuid": "58a6f91d-1aea-475d-bfc4-44014dc63bb4",
+                        "source_uuid": "260a742c-7906-496b-80de-3d10f622deec",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -472,7 +466,7 @@
                     },
                     {
                         "name": "Display Capture 2",
-                        "source_uuid": "bd3f43d6-d3d9-4ea2-88ac-61615ea0f46a",
+                        "source_uuid": "c208d082-998b-4124-96f9-59b8d03e5d04",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -526,63 +520,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Video Capture Device",
-                        "source_uuid": "64c0dd1d-cc6a-4f34-9bf0-9fb00cbd29d5",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1080.0,
-                            "y": 1920.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 3,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 700.0
-                        },
-                        "pos_rel": {
-                            "x": -0.5625,
-                            "y": -0.27083331346511841
-                        },
-                        "scale": {
-                            "x": 1.2749999761581421,
-                            "y": 1.2749999761581421
-                        },
-                        "scale_rel": {
-                            "x": 1.2749999761581421,
-                            "y": 1.2749999761581421
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
                         "name": "Day Count",
-                        "source_uuid": "c471abf6-0711-439c-849d-4fe28ad556e8",
+                        "source_uuid": "3ad6ce08-ff42-4619-9701-a9d1a1d745a8",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -601,20 +540,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 818.0,
-                            "y": 1191.0
+                            "x": 420.0,
+                            "y": 565.5
                         },
                         "pos_rel": {
-                            "x": 0.28958332538604736,
-                            "y": 0.24062502384185791
+                            "x": -0.125,
+                            "y": -0.41093748807907104
                         },
                         "scale": {
-                            "x": 0.47636362910270691,
-                            "y": 0.47463768720626831
+                            "x": 0.57288134098052979,
+                            "y": 0.57421875
                         },
                         "scale_rel": {
-                            "x": 0.47636362910270691,
-                            "y": 0.47463768720626831
+                            "x": 0.57288134098052979,
+                            "y": 0.57421875
                         },
                         "bounds": {
                             "x": 0.0,
@@ -637,7 +576,7 @@
                     },
                     {
                         "name": "AmPm",
-                        "source_uuid": "ac20bab3-85cd-4bd2-a6fe-2ff87ea0c935",
+                        "source_uuid": "d97b7e8b-432e-40b8-af78-687438dcb41d",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -656,12 +595,12 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 902.0,
-                            "y": 782.0
+                            "x": 538.5,
+                            "y": 819.0
                         },
                         "pos_rel": {
-                            "x": 0.37708333134651184,
-                            "y": -0.18541663885116577
+                            "x": -0.0015625000232830644,
+                            "y": -0.14687502384185791
                         },
                         "scale": {
                             "x": 0.3880000114440918,
@@ -692,10 +631,10 @@
                     },
                     {
                         "name": "Mission",
-                        "source_uuid": "4a5359cf-2c20-4ffc-8204-1d49b381778c",
+                        "source_uuid": "824cb96d-cbd4-4f8c-9d6a-4a57a56720a0",
                         "visible": true,
                         "locked": false,
-                        "rot": 0.0,
+                        "rot": 90.0,
                         "scale_ref": {
                             "x": 1080.0,
                             "y": 1920.0
@@ -711,20 +650,20 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 816.0,
-                            "y": 882.0
+                            "x": 982.0,
+                            "y": 608.0
                         },
                         "pos_rel": {
-                            "x": 0.28749999403953552,
-                            "y": -0.081250011920928955
+                            "x": 0.46041667461395264,
+                            "y": -0.36666667461395264
                         },
                         "scale": {
-                            "x": 0.30697673559188843,
-                            "y": 0.3076171875
+                            "x": 1.4496951103210449,
+                            "y": 1.4492753744125366
                         },
                         "scale_rel": {
-                            "x": 0.30697673559188843,
-                            "y": 0.3076171875
+                            "x": 1.4496951103210449,
+                            "y": 1.4492753744125366
                         },
                         "bounds": {
                             "x": 0.0,
@@ -747,10 +686,10 @@
                     },
                     {
                         "name": "Date",
-                        "source_uuid": "ae6e2dc8-acaa-465b-8396-e964f06b98e0",
+                        "source_uuid": "8e7d18d7-61eb-477f-85b4-5da942182968",
                         "visible": true,
                         "locked": false,
-                        "rot": 0.0,
+                        "rot": 90.0,
                         "scale_ref": {
                             "x": 1080.0,
                             "y": 1920.0
@@ -766,20 +705,20 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 265.0,
-                            "y": 1226.0
+                            "x": 1080.0,
+                            "y": 608.0
                         },
                         "pos_rel": {
-                            "x": -0.2864583432674408,
-                            "y": 0.27708327770233154
+                            "x": 0.5625,
+                            "y": -0.36666667461395264
                         },
                         "scale": {
-                            "x": 1.519444465637207,
-                            "y": 1.5199999809265137
+                            "x": 1.9611110687255859,
+                            "y": 1.9600000381469727
                         },
                         "scale_rel": {
-                            "x": 1.519444465637207,
-                            "y": 1.5199999809265137
+                            "x": 1.9611110687255859,
+                            "y": 1.9600000381469727
                         },
                         "bounds": {
                             "x": 0.0,
@@ -802,7 +741,7 @@
                     },
                     {
                         "name": "Status",
-                        "source_uuid": "8e15abe5-4c71-40a5-9353-3fcdf441bc51",
+                        "source_uuid": "9f7919bb-be56-484b-8917-eb3532d029b9",
                         "visible": false,
                         "locked": false,
                         "rot": 0.0,
@@ -821,12 +760,12 @@
                         "id": 10,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 116.0,
-                            "y": 1622.0
+                            "x": 306.0,
+                            "y": 1634.5
                         },
                         "pos_rel": {
-                            "x": -0.44166666269302368,
-                            "y": 0.68958330154418945
+                            "x": -0.24375000596046448,
+                            "y": 0.70254874229431152
                         },
                         "scale": {
                             "x": 0.71487605571746826,
@@ -857,7 +796,7 @@
                     },
                     {
                         "name": "Results",
-                        "source_uuid": "1eba7313-32f8-44b6-8eeb-2a2653bc7d87",
+                        "source_uuid": "294420d1-dd4a-4989-89bd-ef1f612b36fc",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -876,20 +815,20 @@
                         "id": 11,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
-                            "y": 608.0
+                            "x": 89.0,
+                            "y": 925.0
                         },
                         "pos_rel": {
-                            "x": -0.5625,
-                            "y": -0.36666667461395264
+                            "x": -0.46979168057441711,
+                            "y": -0.036458313465118408
                         },
                         "scale": {
-                            "x": 0.8194233775138855,
-                            "y": 0.81730771064758301
+                            "x": 0.90432101488113403,
+                            "y": 0.90425533056259155
                         },
                         "scale_rel": {
-                            "x": 0.8194233775138855,
-                            "y": 0.81730771064758301
+                            "x": 0.90432101488113403,
+                            "y": 0.90425533056259155
                         },
                         "bounds": {
                             "x": 0.0,
@@ -911,8 +850,8 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Browser",
-                        "source_uuid": "44b1526f-c747-4d6b-a92c-2abb33677565",
+                        "name": "Time",
+                        "source_uuid": "0bf62a14-331d-4326-a954-530b68351143",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -931,20 +870,130 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 816.0,
-                            "y": 693.0
+                            "x": 410.0,
+                            "y": 703.5
                         },
                         "pos_rel": {
-                            "x": 0.28749999403953552,
-                            "y": -0.27812498807907104
+                            "x": -0.1354166716337204,
+                            "y": -0.26718747615814209
                         },
                         "scale": {
-                            "x": 0.6600000262260437,
-                            "y": 0.65925925970077515
+                            "x": 0.85250002145767212,
+                            "y": 0.8540540337562561
                         },
                         "scale_rel": {
-                            "x": 0.6600000262260437,
-                            "y": 0.65925925970077515
+                            "x": 0.85250002145767212,
+                            "y": 0.8540540337562561
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Display Capture 3",
+                        "source_uuid": "dde6e3e0-0529-43b3-b106-4b4457a40f76",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1080.0,
+                            "y": 1920.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 13,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 897.0
+                        },
+                        "pos_rel": {
+                            "x": -0.5625,
+                            "y": -0.065625011920928955
+                        },
+                        "scale": {
+                            "x": 0.54099559783935547,
+                            "y": 0.54036456346511841
+                        },
+                        "scale_rel": {
+                            "x": 0.54099559783935547,
+                            "y": 0.54036456346511841
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Video Capture Device",
+                        "source_uuid": "dd0c9608-fd87-4535-b0ef-9fd5bfc7677a",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1080.0,
+                            "y": 1920.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 14,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 608.0
+                        },
+                        "pos_rel": {
+                            "x": -0.5625,
+                            "y": -0.36666667461395264
+                        },
+                        "scale": {
+                            "x": 0.59375,
+                            "y": 0.59375
+                        },
+                        "scale_rel": {
+                            "x": 0.59375,
+                            "y": 0.59375
                         },
                         "bounds": {
                             "x": 0.0,
@@ -984,8 +1033,6 @@
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
                 "libobs.show_scene_item.6": [],
@@ -999,7 +1046,11 @@
                 "libobs.show_scene_item.11": [],
                 "libobs.hide_scene_item.11": [],
                 "libobs.show_scene_item.12": [],
-                "libobs.hide_scene_item.12": []
+                "libobs.hide_scene_item.12": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1009,12 +1060,12 @@
         {
             "prev_ver": 520093699,
             "name": "Status",
-            "uuid": "8e15abe5-4c71-40a5-9353-3fcdf441bc51",
+            "uuid": "9f7919bb-be56-484b-8917-eb3532d029b9",
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "outline": true,
-                "text": "classes are off, programming ongoing\nBUT NO TIME WASTING!",
+                "text": "NO TIME WASTING!",
                 "font": {
                     "face": "JetBrains Mono",
                     "flags": 1,
@@ -1044,13 +1095,48 @@
         },
         {
             "prev_ver": 520093699,
+            "name": "Time",
+            "uuid": "0bf62a14-331d-4326-a954-530b68351143",
+            "id": "browser_source",
+            "versioned_id": "browser_source",
+            "settings": {
+                "is_local_file": true,
+                "local_file": "C:/Users/smabari/Documents/smacodes/clockForObs/time.html",
+                "width": 400,
+                "height": 135
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "ObsBrowser.Refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520093699,
             "name": "Video Capture Device",
-            "uuid": "64c0dd1d-cc6a-4f34-9bf0-9fb00cbd29d5",
+            "uuid": "dd0c9608-fd87-4535-b0ef-9fd5bfc7677a",
             "id": "dshow_input",
             "versioned_id": "dshow_input",
             "settings": {
-                "last_video_device_id": "Logi C270 HD WebCam:\\\\?\\usb#22vid_046d&pid_0825&mi_00#227&db1ebdc&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "video_device_id": "Logi C270 HD WebCam:\\\\?\\usb#22vid_046d&pid_0825&mi_00#227&db1ebdc&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "last_video_device_id": "Logi C270 HD WebCam:\\\\?\\usb#22vid_046d&pid_0825&mi_00#227&db1ebdc&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "active": true
             },
             "mixers": 255,
