@@ -18,8 +18,8 @@ function updateClock() {
   // Update the clock display
   document.getElementById(
     "time"
-  // ).textContent = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
-  ).textContent = `${formattedHours}:${minutes}:${seconds}`;
+  ).textContent = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
+  // ).textContent = `${formattedHours}:${minutes}:${seconds}`;
 
   // Date
   const options = {
