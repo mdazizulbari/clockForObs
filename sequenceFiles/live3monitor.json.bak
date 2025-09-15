@@ -110,7 +110,7 @@
         {
             "monitor": -1,
             "type": 2,
-            "geometry": "AdnQywADAAAAAAADAAAGHwAAAhYAAAd8AAAAAwAABkQAAAIWAAAHfAAAAAAAAAAABDgAAAADAAAGRAAAAhYAAAd8",
+            "geometry": "AdnQywADAAAAAA0IAAACdwAADvwAAAOdAAANCAAAApwAAA78AAADnQAAAAEAAAAAB4AAAA0IAAACnAAADvwAAAOd",
             "alwaysOnTopOverridden": false
         }
     ],
@@ -119,7 +119,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -9,
+    "scaling_level": -8,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
@@ -185,6 +185,35 @@
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "libobs.unmute": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Audio Input Capture (PulseAudio)",
+            "uuid": "e0acc6c5-b616-48a0-88af-a0f695448ee1",
+            "id": "pulse_input_capture",
+            "versioned_id": "pulse_input_capture",
+            "settings": {},
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -292,7 +321,7 @@
             "settings": {
                 "outline_color": 4278190080,
                 "outline_size": 20,
-                "text": "Day09",
+                "text": "Day38",
                 "font": {
                     "face": "Space Mono",
                     "flags": 1,
@@ -402,6 +431,32 @@
             "prev_ver": 520159234,
             "name": "Display Capture (XSHM) 4",
             "uuid": "d00bf88f-58d8-4374-b7ab-2363d6e5d76c",
+            "id": "xshm_input_v2",
+            "versioned_id": "xshm_input_v2",
+            "settings": {
+                "screen": 1
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Display Capture (XSHM) 5",
+            "uuid": "76b7c130-6696-4b8a-95ed-68f9c776b4bb",
             "id": "xshm_input_v2",
             "versioned_id": "xshm_input_v2",
             "settings": {
@@ -655,6 +710,61 @@
                         "private_settings": {}
                     },
                     {
+                        "name": "Display Capture (XSHM) 4",
+                        "source_uuid": "d00bf88f-58d8-4374-b7ab-2363d6e5d76c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 13,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
                         "name": "Time...",
                         "source_uuid": "e986640a-2600-4962-9d8e-92e5e69f03cc",
                         "visible": true,
@@ -877,7 +987,7 @@
                     {
                         "name": "Session count",
                         "source_uuid": "377da1a9-7715-4dc0-99c5-54bec30560ac",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -932,7 +1042,7 @@
                     {
                         "name": "Display Capture (XSHM) 2",
                         "source_uuid": "6eb95d45-d6bc-4622-9eec-0ec7091b1099",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -987,7 +1097,7 @@
                     {
                         "name": "Display Capture (XSHM) 3",
                         "source_uuid": "057ca240-bd5b-442e-975d-5590af1e1386",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -1038,61 +1148,6 @@
                             "duration": 0
                         },
                         "private_settings": {}
-                    },
-                    {
-                        "name": "Display Capture (XSHM) 4",
-                        "source_uuid": "d00bf88f-58d8-4374-b7ab-2363d6e5d76c",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 13,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 1294.0,
-                            "y": 728.0
-                        },
-                        "pos_rel": {
-                            "x": 0.61851853132247925,
-                            "y": 0.34814810752868652
-                        },
-                        "scale": {
-                            "x": 0.32604166865348816,
-                            "y": 0.32592591643333435
-                        },
-                        "scale_rel": {
-                            "x": 0.32604166865348816,
-                            "y": 0.32592591643333435
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
                     }
                 ]
             },
@@ -1117,6 +1172,8 @@
                 "libobs.hide_scene_item.4": [],
                 "libobs.show_scene_item.5": [],
                 "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
                 "libobs.show_scene_item.6": [],
                 "libobs.hide_scene_item.6": [],
                 "libobs.show_scene_item.7": [],
@@ -1130,9 +1187,7 @@
                 "libobs.show_scene_item.11": [],
                 "libobs.hide_scene_item.11": [],
                 "libobs.show_scene_item.12": [],
-                "libobs.hide_scene_item.12": [],
-                "libobs.show_scene_item.13": [],
-                "libobs.hide_scene_item.13": []
+                "libobs.hide_scene_item.12": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1258,7 +1313,7 @@
             "versioned_id": "scene",
             "settings": {
                 "custom_size": false,
-                "id_counter": 48,
+                "id_counter": 49,
                 "items": [
                     {
                         "name": "Video Capture Device (V4L2)",
@@ -1295,6 +1350,61 @@
                         "scale_rel": {
                             "x": 2.6666667461395264,
                             "y": 2.6666667461395264
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Display Capture (XSHM) 5",
+                        "source_uuid": "76b7c130-6696-4b8a-95ed-68f9c776b4bb",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 49,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -1729,12 +1839,12 @@
                             "y": 0.6962963342666626
                         },
                         "scale": {
-                            "x": 0.1680121123790741,
-                            "y": 0.16793893277645111
+                            "x": 0.51442307233810425,
+                            "y": 0.5151515007019043
                         },
                         "scale_rel": {
-                            "x": 0.1680121123790741,
-                            "y": 0.16793893277645111
+                            "x": 0.51442307233810425,
+                            "y": 0.5151515007019043
                         },
                         "bounds": {
                             "x": 0.0,
@@ -1776,12 +1886,12 @@
                         "id": 40,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 680.5,
-                            "y": 5.0
+                            "x": 665.5,
+                            "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -0.51759260892868042,
-                            "y": -0.99074071645736694
+                            "x": -0.54537039995193481,
+                            "y": -1.0
                         },
                         "scale": {
                             "x": 0.33086419105529785,
@@ -1844,7 +1954,9 @@
                 "libobs.show_scene_item.47": [],
                 "libobs.hide_scene_item.47": [],
                 "libobs.show_scene_item.40": [],
-                "libobs.hide_scene_item.40": []
+                "libobs.hide_scene_item.40": [],
+                "libobs.show_scene_item.49": [],
+                "libobs.hide_scene_item.49": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2214,11 +2326,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": -270.5,
-                            "y": -951.5
+                            "y": -961.5
                         },
                         "pos_rel": {
                             "x": -2.2787036895751953,
-                            "y": -2.7620370388031006
+                            "y": -2.7805557250976562
                         },
                         "scale": {
                             "x": 2.46616530418396,
@@ -2268,20 +2380,20 @@
                         "id": 8,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1425.5,
-                            "y": 920.0
+                            "x": 1691.0,
+                            "y": 911.5
                         },
                         "pos_rel": {
-                            "x": 0.8620370626449585,
-                            "y": 0.70370376110076904
+                            "x": 1.3537037372589111,
+                            "y": 0.68796300888061523
                         },
                         "scale": {
-                            "x": 0.1680121123790741,
-                            "y": 0.16793893277645111
+                            "x": 0.5264706015586853,
+                            "y": 0.52380955219268799
                         },
                         "scale_rel": {
-                            "x": 0.1680121123790741,
-                            "y": 0.16793893277645111
+                            "x": 0.5264706015586853,
+                            "y": 0.52380955219268799
                         },
                         "bounds": {
                             "x": 0.0,
@@ -2324,11 +2436,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 680.5,
-                            "y": 5.0
+                            "y": -5.0
                         },
                         "pos_rel": {
                             "x": -0.51759260892868042,
-                            "y": -0.99074071645736694
+                            "y": -1.0092592239379883
                         },
                         "scale": {
                             "x": 0.33086419105529785,
@@ -3120,7 +3232,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 3,
+                "id_counter": 4,
                 "custom_size": false,
                 "items": [
                     {
@@ -3232,6 +3344,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "Audio Input Capture (PulseAudio)",
+                        "source_uuid": "e0acc6c5-b616-48a0-88af-a0f695448ee1",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 4,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -3251,7 +3418,9 @@
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": []
+                "libobs.hide_scene_item.3": [],
+                "libobs.show_scene_item.4": [],
+                "libobs.hide_scene_item.4": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -3267,7 +3436,7 @@
             "versioned_id": "text_ft2_source_v2",
             "settings": {
                 "undo_suuid": "377da1a9-7715-4dc0-99c5-54bec30560ac",
-                "text": "08/10",
+                "text": "04/10",
                 "font": {
                     "face": "Space Mono [CF  ]",
                     "flags": 3,
@@ -3335,11 +3504,11 @@
             "id": "text_ft2_source",
             "versioned_id": "text_ft2_source_v2",
             "settings": {
-                "text": "sub-goal:\nFinishing MERN \nstack lessons",
+                "text": "sub-goal:\nC++ \nLessons",
                 "font": {
                     "face": "Sans Serif",
                     "style": "",
-                    "size": 256,
+                    "size": 72,
                     "flags": 0
                 },
                 "outline": true,
@@ -3433,6 +3602,7 @@
             "id": "xcomposite_input",
             "versioned_id": "xcomposite_input",
             "settings": {
+                "undo_uuid": "61aea0e5-cc9c-4a37-aa8c-02207ad55cd8",
                 "capture_window": "41943218\r\nMeet - bwb-twhc-rox - Google Chrome\r\ngoogle-chrome"
             },
             "mixers": 0,
