@@ -1,6 +1,20 @@
 function updateClock() {
   const now = new Date();
 
+
+  // Challenge start date (8 Aug 2025 is day 1)
+  const startDate = new Date(2025, 7, 8); // months are 0-indexed (7 = August)
+
+  // Difference in ms
+  const diffMs = now - startDate;
+
+  // Convert ms → days
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24)) + 1; 
+  // +1 so that 8/8/25 = Day 1
+
+  // Update dayCount
+  document.getElementById("dayCount").textContent = `Day${diffDays}`;
+  
   // Get hours, minutes, and seconds
   let hours = now.getHours();
   const minutes = String(now.getMinutes()).padStart(2, "0");
@@ -18,13 +32,13 @@ function updateClock() {
   // Update the clock display
   document.getElementById(
     "time"
-  // ).textContent = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
-  ).textContent = `${formattedHours}:${minutes} ${ampm}`;
+    // ).textContent = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
+  ).textContent = `${formattedHours}:${minutes}${ampm}`;
   // ).textContent = `${formattedHours}:${minutes}:${seconds}`;
 
   // Date
   const options = {
-    weekday: "short",
+    // weekday: "short",
     day: "numeric",
     month: "numeric",
     year: "numeric",
