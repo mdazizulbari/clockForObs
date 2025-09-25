@@ -40,7 +40,7 @@ function updateClock() {
     options
   );
 
- // --- Focus/Break Timer ---
+  // --- Focus/Break Timer ---
   const minute = now.getMinutes();
   const second = now.getSeconds();
   let phase, remainingMins, remainingSecs;
@@ -60,8 +60,28 @@ function updateClock() {
   // Format remaining time
   const formattedMins = String(remainingMins).padStart(2, "0");
   const formattedSecs = String(remainingSecs).padStart(2, "0");
+  document.getElementById(
+    "timer"
+  ).textContent = `${phase} ${formattedMins}:${formattedSecs}`;
 
-  document.getElementById("timer").textContent = `${phase} ${formattedMins}:${formattedSecs}`;
+  // --- Session Counter ---
+  // Define the session start hour (default = 0 => midnight)
+  const sessionStartHour = 0; // change this later if needed
+  // 0 → 12:00 AM
+  // 1 → 1:00 AM
+  // 6 → 6:00 AM
+  // 13 → 1:00 PM
+  // 23 → 11:00 PM
+  const currentHour = now.getHours();
+
+  // How many full hours passed since session start
+  let sessionCount = currentHour - sessionStartHour + 1;
+  if (sessionCount < 1) sessionCount = 1; // safeguard
+
+  const sessionDisplay = String(sessionCount).padStart(2, "0");
+  document.getElementById(
+    "session"
+  ).textContent = `Session ${sessionDisplay}/05`;
 }
 
 setInterval(updateClock, 1000);
