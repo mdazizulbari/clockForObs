@@ -57,16 +57,27 @@ function updateClock() {
     remainingSecs = 59 - second;
   }
 
+  // ---- Timer element ----
+  const timerEl = document.getElementById("timer");
+
   // Format remaining time
   const formattedMins = String(remainingMins).padStart(2, "0");
   const formattedSecs = String(remainingSecs).padStart(2, "0");
-  document.getElementById(
-    "timer"
-  ).textContent = `${phase} ${formattedMins}:${formattedSecs}`;
+
+  timerEl.textContent = `${phase} ${formattedMins}:${formattedSecs}`;
+
+  // ---- Add Tailwind colors based on phase ----
+  if (phase === "Focus") {
+    timerEl.classList.remove("text-green-600");
+    timerEl.classList.add("text-red-600");
+  } else {
+    timerEl.classList.remove("text-red-600");
+    timerEl.classList.add("text-green-600");
+  }
 
   // --- Session Counter ---
   // Define the session start hour (default = 0 => midnight)
-  const sessionStartHour = 0; // change this later if needed
+  const sessionStartHour = 1; // change this later if needed
   // 0 → 12:00 AM
   // 1 → 1:00 AM
   // 6 → 6:00 AM
