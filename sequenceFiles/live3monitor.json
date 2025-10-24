@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 536870912,
+        "prev_ver": 536870913,
         "name": "Desktop Audio",
         "uuid": "05cf1581-be4b-4d43-a7a4-57dbe2f7543a",
         "id": "wasapi_output_capture",
@@ -31,7 +31,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536870912,
+        "prev_ver": 536870913,
         "name": "Mic/Aux",
         "uuid": "3ec46f4f-02c8-4b6a-aee4-bf4a280bbedb",
         "id": "wasapi_input_capture",
@@ -101,7 +101,7 @@
         {
             "monitor": -1,
             "type": 2,
-            "geometry": "AdnQywADAAAAAA0IAAACdwAADvwAAAOdAAANCAAAApwAAA78AAADnQAAAAEAAAAAB4AAAA0IAAACnAAADvwAAAOd",
+            "geometry": "AdnQywADAAAAAAADAAAAtgAAAhUAAAIRAAAAAwAAANsAAAIVAAACEQAAAAAAAAAABDgAAAADAAAA2wAAAhUAAAIR",
             "alwaysOnTopOverridden": false
         }
     ],
@@ -110,7 +110,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -8,
+    "scaling_level": -17,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
@@ -154,7 +154,7 @@
     },
     "sources": [
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Audio Input Capture (PulseAudio)",
             "uuid": "e0acc6c5-b616-48a0-88af-a0f695448ee1",
             "id": "pulse_input_capture",
@@ -183,7 +183,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Audio Output Capture (PulseAudio)",
             "uuid": "8d787771-e3f8-40b0-b78f-d07be44c342a",
             "id": "pulse_output_capture",
@@ -195,7 +195,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": true,
+            "muted": false,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -212,7 +212,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Audio Output Capture (PulseAudio) 2",
             "uuid": "4ae653f5-46fb-4acd-b5b1-c7dd02e0f616",
             "id": "pulse_output_capture",
@@ -241,7 +241,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Display Capture (XSHM)",
             "uuid": "789e001b-5796-43b0-beb5-af69654d35f3",
             "id": "xshm_input_v2",
@@ -267,7 +267,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Display Capture (XSHM) 5",
             "uuid": "76b7c130-6696-4b8a-95ed-68f9c776b4bb",
             "id": "xshm_input_v2",
@@ -293,7 +293,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Media Source",
             "uuid": "7bdf678b-4a34-472a-a90e-f9832c45d865",
             "id": "ffmpeg_source",
@@ -330,7 +330,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Monitor Only",
             "uuid": "f5a61c11-fa71-4186-92a0-458a82e7a66f",
             "id": "scene",
@@ -533,7 +533,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Scene",
             "uuid": "a3b25cbe-97cf-416e-996e-720128b4869b",
             "id": "scene",
@@ -822,7 +822,7 @@
                         "source_uuid": "e986640a-2600-4962-9d8e-92e5e69f03cc",
                         "visible": true,
                         "locked": false,
-                        "rot": 0.0,
+                        "rot": -90.0,
                         "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
@@ -838,20 +838,20 @@
                         "id": 38,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": -10.0,
+                            "y": 1080.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
+                            "x": -1.796296238899231,
+                            "y": 1.0
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1.0800000429153442,
+                            "y": 1.0800000429153442
                         },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1.0800000429153442,
+                            "y": 1.0800000429153442
                         },
                         "bounds": {
                             "x": 0.0,
@@ -907,7 +907,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Time...",
             "uuid": "e986640a-2600-4962-9d8e-92e5e69f03cc",
             "id": "browser_source",
@@ -915,8 +915,8 @@
             "settings": {
                 "is_local_file": true,
                 "local_file": "/home/bari/Documents/smaCodes/clockForObs/index.html",
-                "width": 1920,
-                "height": 200
+                "width": 1000,
+                "height": 350
             },
             "mixers": 255,
             "sync": 0,
@@ -942,7 +942,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Video Capture Device (V4L2)",
             "uuid": "a5356d5e-fce8-4596-afd1-ceb408996ded",
             "id": "v4l2_input",
@@ -971,7 +971,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870912,
+            "prev_ver": 536870913,
             "name": "Window Capture (Xcomposite)",
             "uuid": "61aea0e5-cc9c-4a37-aa8c-02207ad55cd8",
             "id": "xcomposite_input",
