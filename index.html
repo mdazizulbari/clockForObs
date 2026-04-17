@@ -1,5 +1,5 @@
 <!-- use width 1080 and height 350 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,30 +23,43 @@
     </style>
   </head>
   <body
-    class="flex justify-center items-center h-screen overflow-hidden bg-blac"
+    class="flex justify-center items-center h-screen overflow-hidden bg-black"
   >
     <div
       id="clock-container"
       class="text-center font-bold space-y-3 text-5xl text-shadow-lg text-shadow-black text-white rounded-lg flex flex-col items-center"
     >
-      <p class="bg-black/70 m-0 p-2 pt-4">Understanding Meaning Of life <br>by reaching Gaols</p>
-        <p class="bg-black/70 m-0 p-2 pt-4">Current Goal: Mastering Editing</p>
+      <!-- time and date -->
       <!-- <div class="flex text-6xl font-semibold justify-center"> -->
       <div class="flex bg-black/70 m-0 p-2">
         <div id="time"></div>
         <!-- &nbsp; -->
-         &#95;
+        &#95;
         <div id="date"></div>
-        <!-- &nbsp; -->
-         &#95;
-        <div id="dayCount"></div>
       </div>
 
-      <div class="flex text-6xl font-semibold bg-black p-2">
+      <div class="bg-black/70 m-0 p-2">
+        <div class="flex justify-center items-baseline gap-6 pb-2">
+          <div id="dayCount2"></div>
+          <p>Of HSC Chemistry Conquest</p>
+        </div>
+
+        <div class="flex justify-center items-baseline gap-6">
+          <div id="dayCount"></div>
+          <p>
+            Of Understanding Life
+            <!-- <br />by reaching Gaols -->
+          </p>
+        </div>
+        <!-- <p>Current Goal: Mastering Editing</p> -->
+      </div>
+
+      <!-- promodoro timer -->
+      <!-- <div class="flex text-6xl font-semibold bg-black p-2">
         <div id="timer"></div>
         &nbsp;
         <div id="session"></div>
-      </div>
+      </div> -->
     </div>
 
     <script src="script.js"></script>

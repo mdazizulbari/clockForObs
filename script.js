@@ -2,7 +2,7 @@ function updateClock() {
   const now = new Date();
 
   // ---- Challenge start date (8 Aug 2025 is day 1) ----
-  const startDate = new Date(2025, 7, 8); // months are 0-indexed (7 = August)
+  const startDate = new Date(2025, 7, 8); // months are 0-indexed (January = 0, February = 1,August = 7)
   // Difference in ms
   const diffMs = now - startDate;
   // Convert ms → days
@@ -10,6 +10,12 @@ function updateClock() {
   // +1 so that 8/8/25 = Day 1
   // Update dayCount
   document.getElementById("dayCount").textContent = `Day${diffDays}`;
+
+  // ---- Challenge 2 start date (17 Apr 2026 is day 1) ----
+  const startDate2 = new Date(2026, 3, 17); // months are 0-indexed (7 = August)
+  const diffMs2 = now - startDate2;
+  const diffDays2 = Math.floor(diffMs2 / (1000 * 60 * 60 * 24)) + 1;
+  document.getElementById("dayCount2").textContent = `Day${diffDays2}`;
 
   // ---- Get hours, minutes, and seconds ----
   let hours = now.getHours();
@@ -77,7 +83,7 @@ function updateClock() {
 
   // --- Session Counter ---
   // Define the session start hour (default = 0 => midnight)
-  const sessionStartHour = 7; // change this later if needed
+  const sessionStartHour = 8; // change this later if needed
   // 0 → 12:00 AM
   // 1 → 1:00 AM
   // 6 → 6:00 AM
