@@ -83,7 +83,7 @@ function updateClock() {
 
   // --- Session Counter ---
   // Define the session start hour (default = 0 => midnight)
-  const sessionStartHour = 8; // change this later if needed
+  const sessionStartHour = 14; // change this later if needed
   // 0 → 12:00 AM
   // 1 → 1:00 AM
   // 6 → 6:00 AM
