@@ -45,7 +45,7 @@
         {
             "monitor": -1,
             "type": 2,
-            "geometry": "AdnQywADAAAAAA0JAAAC8gAADqIAAAP6AAANCQAAAxIAAA6iAAAD+gAAAAEAAAAAB4AAAA0JAAADEgAADqIAAAP6",
+            "geometry": "AdnQywADAAAAAA3LAAAC8AAADs0AAAOjAAANywAAAxAAAA7NAAADowAAAAEAAAAAB4AAAA3LAAADEAAADs0AAAOj",
             "alwaysOnTopOverridden": false
         }
     ],
@@ -721,7 +721,7 @@
                         "source_uuid": "d13eab09-ddac-4832-976b-87da8c3f2fd6",
                         "visible": true,
                         "locked": false,
-                        "rot": 0.0,
+                        "rot": 270.0,
                         "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
@@ -737,12 +737,12 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 275.0,
-                            "y": 1001.0
+                            "x": 0.0,
+                            "y": 310.0
                         },
                         "pos_rel": {
-                            "x": -1.2685185670852661,
-                            "y": 0.85370373725891113
+                            "x": -1.7777777910232544,
+                            "y": -0.42592591047286987
                         },
                         "scale": {
                             "x": 1.0,
@@ -776,7 +776,7 @@
                         "source_uuid": "25e1b928-1187-4d94-a053-f970152562bb",
                         "visible": true,
                         "locked": false,
-                        "rot": 0.0,
+                        "rot": 270.0,
                         "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
@@ -792,12 +792,12 @@
                         "id": 13,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 395.0,
-                            "y": 1010.0
+                            "x": 0.0,
+                            "y": 210.0
                         },
                         "pos_rel": {
-                            "x": -1.046296238899231,
-                            "y": 0.87037038803100586
+                            "x": -1.7777777910232544,
+                            "y": -0.6111111044883728
                         },
                         "scale": {
                             "x": 1.0,
@@ -831,7 +831,7 @@
                         "source_uuid": "89192253-21c6-4829-ba10-3c1c312ca3ee",
                         "visible": true,
                         "locked": false,
-                        "rot": 0.0,
+                        "rot": 270.0,
                         "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
@@ -847,12 +847,12 @@
                         "id": 14,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 515.0,
-                            "y": 1002.0
+                            "x": 0.0,
+                            "y": 110.0
                         },
                         "pos_rel": {
-                            "x": -0.82407408952713013,
-                            "y": 0.85555553436279297
+                            "x": -1.7777777910232544,
+                            "y": -0.79629629850387573
                         },
                         "scale": {
                             "x": 1.0,
@@ -1211,7 +1211,7 @@
                 "gradient": false,
                 "outline_color": 4278190080,
                 "outline_size": 20,
-                "text": "Skiping this \nbreak",
+                "text": "lmk if anyone is there, \nor i will just end the stream",
                 "font": {
                     "face": "Ubuntu",
                     "style": "",
@@ -1488,6 +1488,7 @@
                     "id": "color_filter",
                     "versioned_id": "color_filter_v2",
                     "settings": {
+                        "contrast": 0.41999999999999998,
                         "saturation": 0.29999999999999999
                     },
                     "mixers": 0,
@@ -1547,7 +1548,7 @@
             "settings": {
                 "url": "https://botrix.live/widgets/viewers/?platform=kick&bid=TaTrN7W2EqIcn3aw4eVpcA&font=Share+Tech+Mono&rounded=1&showIcon=1&align=center&theme=neon",
                 "width": 120,
-                "height": 100,
+                "height": 70,
                 "css": ""
             },
             "mixers": 255,
@@ -1582,7 +1583,8 @@
             "settings": {
                 "url": "https://botrix.live/widgets/viewers/?platform=youtube&bid=TaTrN7W2EqIcn3aw4eVpcA&font=Share+Tech+Mono&rounded=1&showIcon=1&align=center&theme=neon",
                 "width": 120,
-                "height": 100
+                "height": 70,
+                "css": ""
             },
             "mixers": 255,
             "sync": 0,
@@ -1616,7 +1618,7 @@
             "settings": {
                 "url": "https://botrix.live/widgets/viewers/?platform=twitch&bid=TaTrN7W2EqIcn3aw4eVpcA&font=Share+Tech+Mono&rounded=1&showIcon=1&align=center&theme=neon",
                 "width": 120,
-                "height": 100,
+                "height": 70,
                 "css": ""
             },
             "mixers": 255,
