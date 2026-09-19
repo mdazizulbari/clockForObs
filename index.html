@@ -21,16 +21,16 @@
         /* font-family: "Share Tech Mono", monospace; */
         font-family: "Space Mono", monospace;
         text-align: center;
-        font-size:38px;
+        font-size: 38px;
         font-weight: bold;
         text-wrap: wrap;
         color: white;
         background: #000;
       }
-      #clock-container{
+      #clock-container {
         display: flex;
         justify-content: center;
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
       }
     </style>
   </head>
@@ -43,11 +43,28 @@
     >
       <!-- time and date -->
       <!-- <div class="flex text-6xl font-semibold justify-center"> -->
-      <div class="flex bg-black/70 m-0 p-2">
+      <div class="flex flex-col bg-black/70 m-0 p-2">
         <div id="time"></div>
         <!-- &nbsp; -->
-        &#95;
+        <!-- &#95; -->
         <div id="date"></div>
+      </div>
+    </div>
+
+    <div class="bg-black/70 m-0 p-2">
+      <div class="flex justify-center items-baseline gap-6">
+        <div id="dayCount"></div>
+        <p>
+          Of decoding_life
+          <!-- <br /> -->
+          by reaching Gaols
+        </p>
+      </div>
+      <!-- <p>Today's Goal: Mastering Editing</p> -->
+
+      <div class="flex justify-center items-baseline gap-6 pb-2">
+        <div id="dayCount2"></div>
+        <p>Of Project The Game Of Life</p>
       </div>
 
       <!-- promodoro timer -->
@@ -55,25 +72,8 @@
         <div id="timer"></div>
         &nbsp;
         <div id="session"></div>
-      </div>
-    </div> -->
-
-      <div class="bg-black/70 m-0 p-2">
-        <div class="flex justify-center items-baseline gap-6 pb-2">
-          <div id="dayCount2"></div>
-          <p>Of Project The Game Of Life</p>
-        </div>
-
-        <div class="flex justify-center items-baseline gap-6">
-          <div id="dayCount"></div>
-          <p>
-            Of decoding_life
-            <!-- <br /> -->
-            by reaching Gaols
-          </p>
-        </div>
-        <!-- <p>Today's Goal: Mastering Editing</p> -->
-      </div>
+      </div> -->
+    </div>
 
     <script src="script.js"></script>
   </body>
