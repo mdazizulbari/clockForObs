@@ -11,8 +11,8 @@ function updateClock() {
   // Update dayCount
   document.getElementById("dayCount").textContent = `Day${diffDays}`;
 
-  // ---- Challenge 2 start date (13 Sep 2026 is day 1) ----
-  const startDate2 = new Date(2026, 8, 13); // months are 0-indexed (7 = August)
+  // ---- Challenge 2 start date (13 Nov 2026 is day 1) ----
+  const startDate2 = new Date(2026, 10, 13); // months are 0-indexed (7 = August)
   const diffMs2 = now - startDate2;
   const diffDays2 = Math.floor(diffMs2 / (1000 * 60 * 60 * 24)) + 1;
   document.getElementById("dayCount2").textContent = `Day${diffDays2}`;
